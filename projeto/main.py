@@ -12,6 +12,7 @@ O projeto consistirá em:
 from numpy import*
 import random
 import matplotlib.pyplot as plt
+import funcoes
 
 # Nossos dados:
 
@@ -29,4 +30,6 @@ for posicao in n_alunos:
         prova += 1
     dados.update({chave: notas})
 
-print(dados)
+medias_alunos = {chave: funcoes.calcula_media(valor) for chave, valor in dados.items()}
+
+print(medias_alunos)
