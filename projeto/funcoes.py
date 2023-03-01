@@ -15,7 +15,7 @@ def calcula_media(listagem): #A função calcula a média dos 3 maiores notas ob
     while pos < 3:
         soma += lista_ordenada[pos]
         pos += 1
-    return round(soma/3, 4) #Função round() arredonda os vaalores decimais
+    return round(soma/3, 2) #Função round() arredonda os vaalores decimais
 
 
 def pega_nota(dicionario, posicao_nota):
